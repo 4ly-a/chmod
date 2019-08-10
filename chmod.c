@@ -1,0 +1,67 @@
+//# chmod
+//chmod for permission to /opt/lampp/htdocs/(The folder of your choice);
+//This have programed on c, and have a bug and fails
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <time.h>
+int x = -1;
+void chmod(){
+      char buffer[512];
+      char name[30];
+      while (x!=0)
+      {
+      system("clear");
+      printf("\t\nDigite o nome do diretório que você deseja conceder a permissão\n| ");
+      scanf("%s", name);
+      const char*texto[] = {"cd /opt/lampp/htdocs/","sudo chmod 777 -R",name};
+      snprintf(buffer,sizeof(buffer),"%s %s %s",texto[0],texto[1],texto[2]);
+      system(buffer);
+
+      printf("\n\n\t0 - Sair\n| ");
+      scanf("%d", &x);
+      }      
+}
+
+void start_xampp(){
+      char name[30];
+      system("clear");
+      while (x!=0)
+      {            
+      printf("\t\n\t\tVocê quer parar ou iniciar o sever ? (p/s)\n| ");
+      scanf("%s", name);
+            if (*name == 's')
+            {
+                  system("sudo /opt/lampp/lampp start");
+                  printf("\n\t0 - Sair\n| ");
+                  scanf("%d", &x);
+            }else 
+      
+            if(*name == 'p')
+            {
+                  system("sudo /opt/lampp/lampp stop");
+                  printf("\n\t0 - Sair\n| ");
+                  scanf("%d", &x);
+            }
+      }
+}
+
+void main(){
+      setlocale(LC_ALL,"Portuguese");
+      int y = -1;
+      while (y!=0)
+      {
+      system("clear");
+      printf("\n\t\t\tBem vindo\n\t0 - Sair     1 - start_xampp   2 - chmod.exe\n | ");
+      scanf("%d", &y);
+            if (y == 1){
+                  start_xampp();
+                  system("PAUSE");
+            }else if(y == 2)
+            {
+                  chmod();
+            } 
+      }
+}
+
