@@ -2,6 +2,8 @@
 //chmod for permission to /opt/lampp/htdocs/(The folder of your choice);
 //This have programed on c, and have a bug and fails
 
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
