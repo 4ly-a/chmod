@@ -1,8 +1,5 @@
 //# chmod
 //chmod for permission to /opt/lampp/htdocs/(The folder of your choice);
-//This have programed on c, and have a bug and fails
-
-
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -49,20 +46,19 @@ void start_xampp(){
       }
 }
 
-void main(){
+int main(){
       setlocale(LC_ALL,"Portuguese");
       int y = -1;
       while (y!=0)
       {
       system("clear");
-      printf("\n\t\t\tBem vindo\n\t0 - Sair     1 - start_xampp   2 - chmod.exe\n | ");
+      printf("\n\t\t\tWellcome\n\t1 - exit    2 - chmod.exe\n | ");
       scanf("%d", &y);
             if (y == 1){
-                  start_xampp();
-                  system("PAUSE");
+                  chmod();
             }else if(y == 2)
             {
-                  chmod();
+                  return 0;
             } 
       }
 }
