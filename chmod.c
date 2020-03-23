@@ -23,6 +23,8 @@ void chmod(){
       }      
 }
 
+/* Ignore
+
 void start_xampp(){
       char name[30];
       system("clear");
@@ -45,6 +47,8 @@ void start_xampp(){
             }
       }
 }
+
+*/
 
 int main(){
       setlocale(LC_ALL,"Portuguese");
