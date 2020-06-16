@@ -2,5 +2,5 @@
 chmod for permission on 
 
 ```
-/opt/lampp/htdocs/(The folder of your choice);
+/opt/lampp/htdocs/<b>(The folder of your choice)</b>;
 ```
