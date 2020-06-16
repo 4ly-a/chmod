@@ -1,5 +1,7 @@
 //# chmod
 //chmod for permission to /opt/lampp/htdocs/(The folder of your choice);
+// Hii moom 
+
 
 #include <stdio.h>
 #include <stdlib.h>
