@@ -10,5 +10,4 @@ for execute the code in linux terminal
 ```
 gcc chmod.c -o chmod
 ./chmod
-
 ```
